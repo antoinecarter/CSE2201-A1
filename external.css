@@ -1,0 +1,68 @@
+.grid-container{
+    display: grid;
+    grid-gap: 0px;
+    grid: auto / 225px 225px 225px 225px 225px 225px;
+    grid-gap: 0px;
+    color: black;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6{
+  background-color: #f0f0f0;
+  padding: 10px 1px 1px 5px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+.grid-navbar a button{
+    background-color: white;
+    outline: none;
+    width: 100%;
+    height: 60px;
+    border: none;
+    text-align: center;
+    font-family: "Lato", sans serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.grid-navbar a button:hover{
+  text-decoration: underline;
+  background-color: #f0f0f0;
+  border-right: solid;
+  border-left: solid;
+  border-color: lavender;
+  border-width: 0.05px;
+  box-shadow:
+  inset 1px 0 50px 0 #ecdafe,
+  inset 5px 0 50px 0 #d7b4f3;
+
+}
+
+.grid-navbar:focus{
+  outline: none;
+}
+
+.grid-logo{
+  background-color: white;
+  border-radius: 50%;
+  box-shadow:
+    inset 10px 10px 10px 0px #e5daff,
+    inset 10px 10px 10px 5px #cbf6ff,
+    inset 10px 10px 15px 10px #c8ffe1;
+  margin: auto;
+  font-size: 15px;
+  font-family: "Kaushan Script", cursive;
+}
+
+
+#container{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}

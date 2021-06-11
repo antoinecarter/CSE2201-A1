@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Kaushan+Script&family=Lato&family=Open+Sans">
+    <link rel="stylesheet" href="external.css">
+
+    <style>
+
+      .grid-container{
+        overflow: hidden;
+        position: relative;
+      }
+
+      #grid-row1-text{
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+        text-align: justify;
+        padding-left: 50px;
+
+      }
+
+      #grid-row1-img{
+        grid-column: 4 / span 3;
+        grid-row: 3 / span 1;
+        padding-top:75px;
+        padding-left: 100px;
+
+      }
+
+      #grid-row2-img{
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 1;
+        background-color: #e5daff;
+
+      }
+
+      #grid-row2-img > img{
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+
+      #grid-row2-text{
+        grid-column: 4 / span 3;
+        grid-row: 4 / span 1;
+        background-color: #e5daff;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-right: 100px;
+      }
+
+      .grid-footer{
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 1;
+        background-color: #f0f0f0;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: "Open Sans", sans serif;
+        font-weight: lighter;
+
+      }
+
+      h2, div>p{
+        font-family: "Lato", sans-serif;
+      }
+
+      h2{
+        font-size: 40px;
+      }
+
+      div>p{
+        font-size: 20px;
+
+      }
+
+      #grid-row1-text > h2:after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 2px;
+        background: #e5daff;
+      }
+
+      #grid-row2-text > h2:after {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 2px;
+        background: white;
+      }
+
+      #grid-row3-text{
+        grid-column: 1 / span 6;
+        grid-row: 5 / span 1;
+        text-align: center;
+        background: white;
+      }
+
+      #grid-row3-text > h2:after {
+        content: "";
+        display: block;
+        width: 250px;
+        height: 2px;
+        background: #e5daff;
+        margin: auto;
+      }
+
+      .schedule{
+        font-family: "Lato", sans serif;
+        font-size: 20px;
+        border-collapse: collapse;
+        margin-right: auto;
+        margin-left: 100px;
+        margin:auto;
+      }
+
+      td{
+        padding: 20px;
+      }
+
+      .col1{
+        border-right: 1px dotted black;
+      }
+
+      .apt-button{
+        background-color: transparent;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        background-color: #e5daff;
+        border: none;
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+        margin: 20px 5px 0px 0px;
+      }
+
+      .apt-button:hover{
+        background-color: #f1ebff;
+        border: 1px solid #ddd;
+      }
+
+      .apt-button:active{
+        background-color: black;
+        outline: none;
+        border:none;
+        color: white;
+      }
+
+      .row1{
+
+        height: 500px;
+      }
+
+      .row2{
+
+        height: 500px;
+      }
+
+      .row3{
+
+        height: 500px;
+      }
+
+    </style>
+
+  </head>
+  <body id="container">
+    <div class="grid-container">
+      <div class="item1">
+        Call Us: +592 287 - 2190
+      </div>
+
+      <div class="item2" id="dateTime" onload="checkDateTime()" style="word-spacing: 10px">
+        2
+      </div>
+
+      <div class="item3" id="timer" onload="checkStatus()">
+        3
+      </div>
+
+      <div class="item4">
+
+      </div>
+
+      <div class="item5">
+
+      </div>
+
+      <div class="item6" style="padding: 3px 0px 8px 0px; word-spacing: 10px">
+        <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="pintErest.svg" alt="Pinterest"></a>
+      </div>
+
+      <script src="status.js"></script>
+
+
+      <div class="grid-logo">
+        <p class="logo-text" style="font-family:Kaushan Script, cursive">Sensational Spa</p>
+      </div>
+
+      <div class="grid-navbar">
+        <a href="home-page.html"><button type="button" name="button">Home</button></a>
+      </div>
+      <div class="grid-navbar">
+        <a href="services-page.html"><button type="button" name="button">Services</button></a>
+      </div>
+      <div class="grid-navbar">
+        <a href="employees-page.html"><button type="button" name="button">Employees</button></a>
+      </div>
+      <div class="grid-navbar">
+        <a href="appointment-page.html"><button type="button" name="button">Make An Appointment</button></a>
+      </div>
+      <div class="grid-navbar">
+        <a href="about-us-page.html"><button type="button" name="button">About Us</button></a>
+      </div>
+
+      <div id="grid-row1-text"  class="row1">
+        <h2><br><br>Experience the best salon service</h2>
+        <p>With years of experience in the business, at <em>Sensational Spa</em>  we offer a range of services catered for both men and women. Come relax in our steam sauna, or lay back and enjoy a massage from the best!</p>
+       </div>
+
+      <div id="grid-row1-img" class="row1">
+        <img onload="animateRow1()"  src="spa_1.jpg" alt="Bliss" style="width: 400px; height 400px; position: absolute">
+      </div>
+
+      <div id="grid-row2-img" class="row2">
+        <img id="img2" onload="animateRow2()" src="lay_back.jpg" alt="Relaxing" style="width: 400px; height 400px; position: absolute">
+      </div>
+
+      <div id="grid-row2-text" class="row2">
+        <h2 style="text-align: left"><br>Why Choose <br>Us?</h2>
+        <p> We offer the best in-house spa treatment you could possibly wish for. And when you leave, you carry with you our <em style="font-weight: bold">signature lavender scent</em> that leaves your body freshly scented and smooth to the touch. We not only provide spa services but also offer our own local products for your own leisure!</p>
+      </div>
+
+      <div id="grid-row3-text" class="row3">
+      <h2 style="text-align: center">Our Schedule:</h2>
+      <table class="schedule">
+        <tr>
+          <td class="col1">Mondays - Fridays</td>
+          <td class="col2">09:00hrs - 17:00hrs</td>
+        </tr>
+        <tr>
+          <td class="col1">Saturdays</td>
+          <td calss="col2">09:00hrs - 14:00hrs</td>
+        </tr>
+        <tr>
+          <td class="col1">Sundays</td>
+          <td class="col2">08:00hrs - 13:30hrs</td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="appointment-page.html"><button class= "apt-button" type="button" name="button">Make an Appointment Today!</button></a></td>
+        </tr>
+      </table>
+      </div>
+
+      <div class="grid-footer">
+        <span style="padding-right: 25px">© Copyright 2020 - 2021<br>Privacy Policy<br>All Rights Reserved. Powered by Euphoria Media Studios</span>
+      </div>
+    </div>
+
+    <script>
+
+        var animateRow1 = function(){
+          var elem1 = document.getElementById("grid-row1-img");
+          var id = null;
+          var paddingLeft=1000;
+
+          clearInterval(id);
+          id = setInterval(frame, 1);
+
+          function frame(){
+            if(paddingLeft==100){
+              clearInterval(id);
+            }else{
+              paddingLeft--;
+              elem1.style.paddingLeft = paddingLeft+"px";
+            }
+          }
+        }
+
+        var animateRow2 = function(){
+          var elem = document.getElementById("img2");
+          var id = null;
+          var marginLeft= -1000;
+
+          clearInterval(id);
+          id = setInterval(frame, 1);
+          function frame(){
+            if(marginLeft==50){
+              clearInterval(id);
+            }else{
+              marginLeft++;
+              elem.style.marginLeft = marginLeft+"px";
+            }
+          }
+        }
+
+        animateRow1();
+        animateRow2();
+
+    </script>
+
+  </body>
+</html>
